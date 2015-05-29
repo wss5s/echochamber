@@ -13,16 +13,21 @@ module Echochamber::Request
     end
   end
 
-  BASE_URL = 'https://secure.echosign.com/api/rest/v2'
+  BASE_URL = 'https://secure.echosign.com/api/rest/v5'
 
   ENDPOINT = { 
-    token: BASE_URL + '/auth/tokens',
+    base_uri: BASE_URL + '/base_uris',
     user: BASE_URL + '/users',
     agreement: BASE_URL + '/agreements',
     reminder: BASE_URL + '/reminders',
     transientDocument: BASE_URL + '/transientDocuments',
     libraryDocument: BASE_URL + '/libraryDocuments',
-    widget: BASE_URL + '/widgets'
+    widget: BASE_URL + '/widgets',
+    view: BASE_URL + '/views',
+    search: BASE_URL + '/search',
+    workflow: BASE_URL + '/workflows',
+    group: BASE_URL + '/groups',
+    megaSign: BASE_URL + '/megaSigns',
   }
 
   # Retrieves the authentication token
