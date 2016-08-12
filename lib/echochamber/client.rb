@@ -10,7 +10,7 @@ module Echochamber
     attr_reader :token
     # Initializes the Client object
     #
-    # @param credentials [String] Integration key
+    # @param credentials [String] Access token or integration key
     # @return [Echochamber::Client] Initialized Echochamber::Client 
     def initialize(credentials)
       @token = credentials
