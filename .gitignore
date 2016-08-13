@@ -2,3 +2,5 @@
 .yardoc
 .yardoc/*
 .DS_Store
+
+scripts/oauth_config.rb
