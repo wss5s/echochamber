@@ -108,26 +108,18 @@ module Echochamber::Request
   private
 
   def self.get(endpoint, headers)
-    begin
-      RestClient.get(
-        endpoint, 
-        headers
-      )
-    rescue Exception => error
-      raise_error(error)
-    end
+    RestClient.get(
+      endpoint, 
+      headers
+    )
   end
 
   def self.post(endpoint, body, headers)
-    begin
-      RestClient.post(
-        endpoint, 
-        body.to_json, 
-        headers
-      )
-    rescue Exception => error
-      raise_error(error)
-    end
+    RestClient.post(
+      endpoint, 
+      body.to_json, 
+      headers
+    )
   end
 
   def self.add_query(url, query)
