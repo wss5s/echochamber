@@ -13,7 +13,7 @@ module Echochamber::Request
     end
   end
 
-  BASE_URL = 'https://secure.na2.echosign.com/api/rest/v5'
+  BASE_URL = 'https://api.na1.echosign.com/api/rest/v5'
 
   ENDPOINT = { 
     base_uri: BASE_URL + '/base_uris',
